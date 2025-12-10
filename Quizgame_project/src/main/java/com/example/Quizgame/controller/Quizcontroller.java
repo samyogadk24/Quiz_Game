@@ -60,10 +60,23 @@ public class QuizController {
 
         System.out.println("Quiz begins now...\n");
 
+        QuizService quizService = new QuizService(input);
+        quizService.startQuiz();
+
+        
+
+
+
+    
     }
 
     private void showCredits() {
         System.out.println("\n=== CREDITS ===");
         System.out.println("Created by: dev's and smriti");
     }
+        
+       
+
+   
+
 }

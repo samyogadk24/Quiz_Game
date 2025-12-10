@@ -2,6 +2,7 @@ package com.example.quizgame;
 
 import java.util.Scanner;
 import com.example.quizgame.controller.QuizController;
+import com.example.quizgame.service.QuizService;
 
 public class Main {
 
