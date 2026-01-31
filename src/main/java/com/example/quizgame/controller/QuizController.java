@@ -47,20 +47,19 @@ public class QuizController {
 
         
         
+      int score = quizService.startQuiz(category);
 
-        
-        int score = quizService.startQuiz(category);
+     System.out.println("\nYour total score: " + score);
 
-        System.out.println("\nYour total score: " + score);
-
-        
-        
+ 
+      Result result = new Result(name, category, score);
 
 
-        showCredits();
+     FileUtils.saveResult(result);
 
-       
-        showMenu();
+     showCredits() ;
+     showMenu();
+
     }
 
     private void showInstructions() {
@@ -73,9 +72,11 @@ public class QuizController {
         System.out.println("Good luck!\n");
     }
 
+
     private void showCredits() {
         System.out.println("\n=== Credits ===");
         System.out.println(" Quiz Game developed by: [Dev's & Smriti]");
+        System.out.println("");
       
     }
 }
