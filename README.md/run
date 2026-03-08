@@ -1,0 +1,8 @@
+for compiling 
+
+javac -d out com\example\quizgame\Main.java com\example\quizgame\controller\*.java com\example\quizgame\dao\*.java com\example\quizgame\model\*.java com\example\quizgame\service\*.java com\example\quizgame\utils\*.java
+
+for running 
+
+java -cp out com.example.quizgame.Main
+

@@ -10,7 +10,7 @@ public class QuestionDao {
 
         List<Question> questions = new ArrayList<>();
 
-        if (category.equalsIgnoreCase("Math")) {
+        if (category.equalsIgnoreCase("Math")) {         
 
             questions.add(new Question("7^2 + 3 * 5 = ?", new String[]{"58", "56", "49", "66"}, 0));
             questions.add(new Question("Solve for x: 2x + 7 = 19", new String[]{"5", "6", "7", "8"}, 1));

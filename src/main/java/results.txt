@@ -1,1 +1,2 @@
-Samyog | science | 0
+Name | Category | Score
+sam | math | 7
